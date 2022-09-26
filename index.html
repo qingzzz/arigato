@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARIGATOBANK</title>
+    <script src="js/swiper.animate1.0.2.min.js" type="text/javascript"></script>
+    <script src="js/jquery-1.10.1.min.js" type="text/javascript"></script>
+    <script src="js/swiper-3.4.2.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="index">
+    <!-- 头部 -->
+    <header class="darkmode">
+        <div class="header">
+            <div class="header_inner">
+                <div class="header_logo">
+                    <a href="/index.html"><img src="images/header-logo-darkmode.png" alt="" class="darkmode">
+                        <img src="images/header-logo-lightmode.png" alt="" class="lightmode"></a>
+                </div>
+                <nav class="header_nav">
+                    <ul class="nav_list">
+                        <li><a href="/index.html" class="anchor">HOME</a></li>
+                        <li><a href="/index.html#about" class="anchor">できること
+                                <span class="header_line"></span>
+                            </a>
+                        </li>
+                        <li><a href="/card.html" class="anchor">選べるカード<span class="header_line"></span></a></li>
+                        <li><a href="/index.html#faq" class="anchor">よくあるご質問<span class="header_line"></span></a></li>
+                    </ul>
+                    <div class="nav_button button">
+                        アプリダウンロード
+                    </div>
+                    <div class="header_download">
+                        <h6>
+                            ご利用はkifutownアプリから
+                        </h6>
+                        <ul class="header_downloadList">
+                            <li><a href="javascript:;"><img src="images/icon-store-apple.png" alt=""></a></li>
+                            <li><a href="javascript:;"><img src="images/icon-store-google.png" alt=""></a></li>
+                        </ul>
+                        <p class="header_downloadAnnotation">※"全員お金贈りfrom宇宙"の当選金の受取りに対応したkifutownアプリは、ストアにて順次配信予定です。</p>
+                        <div class="header_kifutownLinkWrapper">
+                            <a href="https://www.kifutown.com/">
+                                <img src="images/footer-kiftownLinkImage.png" alt="">
+                                <span class="header_kifutownLinkText">kifutown.com</span>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+                <div class="header_menu">
+                </div>
+            </div>
+        </div>
+
+        <div class="header_banner-hd">
+            <img src="images/header-image.svg" alt="">
+        </div>
+        <div class="header_banner">
+            <div class="swiper-container swiper-no-swiping">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/header-background-01.jpg" alt="" class="pconly">
+                        <img src="images/header-background-sp-01.jpg" alt="" class="sponly">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/header-background-02.jpg" alt="" class="pconly">
+                        <img src="images/header-background-sp-02.jpg" alt="" class="sponly">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <!-- (未解决)拖动时鼠标图标会变  -->
+    <script>
+        var mySwiper01 = new Swiper('header .swiper-container', {
+            autoplay: 5000,//可选选项，自动滑动
+            noSwiping: true,
+            loop: true,
+            speed: 800,
+        })
+        // $(function () {
+        //     $('.anchor').click(function () {
+        //         $('html,body').animate({
+        //             scrollTop: ($($this).attr('href')).offset().top
+        //         }, 1000)
+        //     })
+        // })
+        $('.header_menu').click(function () {
+            $('.header').toggleClass('openMenu')
+        });
+        $('.anchor').click(function () {
+            $('.header').removeClass('openMenu')
+        })
+    </script>
+    <!-- 头部结束 -->
+    <div class="download">
+        <div class="download_mask"></div>
+        <div class="download_inner">
+            <h6>
+                ご利用はkifutownアプリから
+            </h6>
+            <ul class="downloadList">
+                <li><a href="javascript:;"><img src="images/icon-store-apple.png" alt=""></a></li>
+                <li><a href="javascript:;"><img src="images/icon-store-google.png" alt=""></a></li>
+            </ul>
+            <p class="downloadAnnotation">※"全員お金贈りfrom宇宙"の当選金の受取りに対応したkifutownアプリは、ストアにて順次配信予定です。</p>
+            <span class="download_close"></span>
+        </div>
+    </div>
+    <script>
+        $('.nav_button').click(function () {
+            $('.download').addClass('openDownload');
+        });
+
+        $('.download_close').click(function () {
+            $('.download').removeClass('openDownload');
+        });
+        $('.download_mask').click(function () {
+            $('.download').removeClass('openDownload');
+        });
+    </script>
+    <main class="main">
+        <!-- 关于about -->
+        <section class="about" id="about">
+            <div class="about_inner">
+                <div class="about_text">
+                    <h2>kifutownで
+                        <br>
+                        受取った寄付金を
+                        <br>
+                        すぐにお買い物に
+                        <br>
+                        使えます
+                    </h2>
+                    <p>kifutownで受取った寄付金はネットや街のVisa加盟店で支払いに使えます。年会費無料で誰でも使えるVisaプリペイドカードをkifutownアプリからすぐに利用できます。</p>
+                    <a href="https://www.kifutown.com/" class="about_link underline" target="_blank">kifutownとは?</a>
+                    <a href="/card.html" class="button about_button">選べるカード</a>
+                </div>
+                <div class="about_img">
+                    <span class="about_subtitle"></span>
+                    <div class="swiper-container swiper-no-swiping">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="images/about-imageSwiper-01.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/about-imageSwiper-02.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <span class="about_ani_01"></span>
+                    <span class="about_ani_02"></span>
+                    <div class="about_slide_bg">
+                        <img src="images/about-imageSwiper-bg.jpg" alt="" class="about_slide_bg_img">
+                    </div>
+                </div>
+            </div>
+            <ul class="about_list">
+                <li class="about_item">
+                    <img src="images/about-itemImage-01.png" alt="">
+                    <div class="aboutList_text">
+                        <h3>最短1分、誰でもカードが使えます
+                        </h3>
+                        <p>kifutownアプリで登録後すぐにネット専用のVisaプリペイドカードが使えます。年齢制限、審査はありません。</p>
+                    </div>
+
+                </li>
+                <li class="about_item">
+                    <img src="images/about-itemImage-02.png" alt="">
+                    <div class="aboutList_text">
+                        <h3>入会費・年会費は無料です
+                        </h3>
+                        <p>カードは入会費・年会費無料で気軽に使えます。残高のチャージもクレジットカードやATMから無料で行えます。</p>
+                    </div>
+
+                </li>
+                <li class="about_item">
+                    <img src="images/about-itemImage-03.png" alt="">
+                    <div class="aboutList_text">
+                        <h3>世界中のVisa加盟店で使えます
+                        </h3>
+                        <p>ネットショッピングやアプリの支払いだけでなく、街のお店で使えるカードもお申し込みいただけます。</p>
+                        <a href="https://support.kifutown.com/hc/ja/articles/4512484479385"
+                            class="underline about_item_link" target="_blank">一部ご利用いただけない加盟店があります</a>
+                    </div>
+
+                </li>
+            </ul>
+        </section>
+        <section class="howtouse">
+            <div class="howtouse_bg">
+                <span class="howtouse_subtitle"></span>
+            </div>
+            <div class="howtouse_textWrapper">
+                <div class="howtouse_text">
+                    <h2>いますぐ始めよう</h2>
+                    <ol class="howtouse_list">
+                        <li class="howtouse_item">
+                            <div class="howtouse_itemImg">
+                                <span class="howtouse_itemImg_num howtouse_itemImg_num01">
+                                    <img src="images/howtouse-itemNumber-background-01.svg" alt="">
+                                </span>
+                                <div class="howtouse_itemImgBox">
+                                    <img src="images/howtouse-itemImage-01.jpg" alt="" class="howtouse_item_image1">
+                                </div>
+                            </div>
+                            <div class="howtouse_itemText">
+                                <h3>kifutownアプリをダウンロードしましょう</h3>
+                                <p>kifutownアプリをダウンロードして、「残高」をタップ。あなたが持っている残高を確認できます。kifutownの寄付金を受取ることもできます。</p>
+                            </div>
+                        </li>
+                        <li class="howtouse_item">
+                            <div class="howtouse_itemImg">
+                                <span class="howtouse_itemImg_num">
+                                    <img src="images/howtouse-itemNumber-background-02.svg" alt="">
+                                </span>
+                                <div class="howtouse_itemImgBox">
+                                    <img src="images/howtouse-itemImage-02.jpg" alt="" class="howtouse_item_image2">
+                                </div>
+                            </div>
+
+                            <div class="howtouse_itemText">
+                                <h3>残高はATMやクレジットカードからもチャージできます
+                                </h3>
+                                <p>残高は寄付金の受取りのほか、セブン銀行ATMやクレジットカードからチャージができます。お買い物に必要な金額をチャージしましょう。</p>
+                                <a href="https://support.kifutown.com/hc/ja/articles/4512763822489"
+                                    class="underline howtouse_item_link" target="_blank">残高をチャージするには</a>
+                            </div>
+                        </li>
+                        <li class="howtouse_item">
+                            <div class="howtouse_itemImg">
+                                <span class="howtouse_itemImg_num">
+                                    <img src="images/howtouse-itemNumber-background-03.svg" alt="">
+                                </span>
+                                <div class="howtouse_itemImgBox">
+                                    <img src="images/howtouse-itemImage-03.jpg" alt="" class="howtouse_item_image3">
+                                </div>
+                            </div>
+                            <div class="howtouse_itemText">
+                                <h3>ネットのお店は、ネット専用カードですぐに支払えます</h3>
+                                <p>残高はネットショッピングやアプリの支払いに使うことができます。支払い方法で「クレジットカード」を選択。アプリに表示されるカード情報を入力しましょう。</p>
+                                <a href="https://support.kifutown.com/hc/ja/articles/4512343161753#h_01FWQPKTSXZHEVQJ5MMHFXJWM0"
+                                    class="underline howtouse_item_link" target="_blank">ネットのお店で使うには？</a>
+                            </div>
+
+                        </li>
+                        <li class="howtouse_item">
+                            <div class="howtouse_itemImg">
+                                <span class="howtouse_itemImg_num">
+                                    <img src="images/howtouse-itemNumber-background-04.svg" alt="">
+                                </span>
+                                <div class="howtouse_itemImgBox">
+                                    <img src="images/howtouse-itemImage-04.jpg" alt="" class="howtouse_item_image4">
+                                </div>
+                            </div>
+                            <div class="howtouse_itemText">
+                                <h3>街のお店で使えるカードも申し込めます</h3>
+                                <p>カードを申し込むと、残高を街のお店の支払いに使うことができます。 Visaのマークのあるお店で、「カード払いで」と伝えて支払いましょう。</p>
+                                <a href="https://support.kifutown.com/hc/ja/articles/4512484479385"
+                                    class="underline howtouse_item_link" target="_blank">使えるお店・使えないお店の注意点</a>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+
+            </div>
+        </section>
+
+
+        <script>
+            var mySwiper02 = new Swiper('.about .swiper-container', {
+                autoplay: 5000,//可选选项，自动滑动
+                noSwiping: true,
+                loop: true,
+                effect: 'fade',
+                speed: 1000,
+                fade: {
+                    crossFade: true,
+                }
+            })
+        </script>
+    </main>
+    <aside class="faq" id="faq">
+        <h2>よくあるご質問</h2>
+        <ul class="faq_list">
+            <li class="faq_item">
+                <h3 class="faq_itemTitle">ARIGATOBANKカードとは？</h3>
+                <p class="faq_itemText">
+                    ARIGATOBANKカードは、ARIGATOBANK残高を使ってVisa加盟店で支払いができるVisaプリペイドカードです。
+                    <br>
+                    <br>
+                    全員お金贈りで当選したお金や、kifutownでもらった寄付金をARIGATOBANK残高として受取ることで、Visa加盟店で利用できます。またご自身でARIGATOBANK残高をチャージして繰り返し利用できます。
+                </p>
+                <span class="line"></span>
+
+            </li>
+            <li class="faq_item">
+                <h3 class="faq_itemTitle">ARIGATOBANKカードの使い方、使える場所は？</h3>
+                <p class="faq_itemText">
+                    ARIGATOBANKカードには、kifutownアプリにカード情報が表示され、すぐにネットのVisa加盟店で使える「ARIGATOBANKカード
+                    ネット専用」と、街のVisa加盟店でも使える「ARIGATOBANKカード ライト」「ARIGATOBANKカード プラス」があります。
+                    <br>
+                    <br>
+                    <a href="https://support.kifutown.com/hc/ja/articles/4512343161753" class="underline faq_item_link"
+                        target="_blank">使い方について</a>
+                    <br>
+
+                    <a href="https://support.kifutown.com/hc/ja/articles/4512484479385" class="underline faq_item_link"
+                        target="_blank">使える場所について</a>
+                </p>
+                <span class="line"></span>
+            </li>
+            <li class="faq_item">
+                <h3 class="faq_itemTitle">カードの発行に費用や年会費かかりますか？</h3>
+                <p class="faq_itemText">
+                    ARIGATOBANKカードは年会費無料です。
+                    <br>
+                    ネットショッピングやアプリで使えるネット専用カードの発行は無料です。街のお店で使えるARIGATOBANKカード ライトおよびプラスの発行には発行手数料がかかります。
+                </p>
+                <span class="line"></span>
+
+            </li>
+            <li class="faq_item">
+                <h3 class="faq_itemTitle">残高を増やす（チャージ）方法は？</h3>
+                <p class="faq_itemText">
+                    ARIGATOBANK残高は以下の方法でチャージや受取りができます。
+                    <br><br>
+                    ・全員お金贈りの当選金を受取る
+                    <br>
+                    ・kifutownの寄付金を受取る
+                    <br>
+                    ・ご自身でチャージする(セブン銀行ATM、クレジットカード)
+                    <br>
+                    <br>
+                    <a href="https://support.kifutown.com/hc/ja/articles/4512742991769" class="underline faq_item_link"
+                        target="_blank">残高の詳しい使い方</a>
+                </p>
+                <span class="line"></span>
+
+            </li>
+        </ul>
+        <div class="faq_button">
+            <a href="https://support.kifutown.com/hc/ja/sections/4416661785113" class="button faq_button_link"
+                target="_blank">もっと見る</a>
+        </div>
+    </aside>
+    <script>
+        $(".faq_itemTitle").click(function () {
+            $(this).next().toggle();
+            $(this).toggleClass("open")
+        })
+    </script>
+    <footer class="footer">
+        <div class="footer_inner">
+            <h2 class="footer_title">
+                ご利用は
+                <br>
+                kifutownアプリから
+            </h2>
+            <div class="footer_download">
+                <ul class="footer_downloadList">
+                    <li class="footer_downloadItem">
+                        <a href="https://apps.apple.com/us/app/kifutown/id1572966539">
+                            <img src="images/icon-store-apple.png" alt="">
+                        </a>
+                    </li>
+                    <li class="footer_downloadItem">
+                        <a href="https://play.google.com/store/apps/details?id=jp.co.arigatobank.kifutown">
+                            <img src="images/icon-store-google.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+                <p class="footer_downloadText">※"全員お金贈りfrom宇宙"の当選金の受取りに対応したkifutownアプリは、ストアにて順次配信予定です。</p>
+            </div>
+            <ul class="footer_list">
+                <li class="footer_item">
+                    <a href="https://support.kifutown.com/hc/ja/sections/4416661785113" class="footer_link">ヘルプページ</a>
+                </li>
+                <li class="footer_item">
+                    <a href="https://support.kifutown.com/hc/ja/sections/4416661785113" class="footer_link">利用規約</a>
+                </li>
+                <li class="footer_item">
+                    <a href="https://support.kifutown.com/hc/ja/sections/4416661785113"
+                        class="footer_link">資金決済法に基づく表示</a>
+                </li>
+                <li class="footer_item">
+                    <a href="https://support.kifutown.com/hc/ja/sections/4416661785113"
+                        class="footer_link">反社会勢力に対する基本方針</a>
+                </li>
+                <li class="footer_item">
+                    <a href="https://support.kifutown.com/hc/ja/sections/4416661785113"
+                        class="footer_link">情報セキュリティ基本方針</a>
+                </li>
+                <li class="footer_item">
+                    <a href="https://support.kifutown.com/hc/ja/sections/4416661785113"
+                        class="footer_link">プライバシーポリシー</a>
+                </li>
+                <li class="footer_item">
+                    <a href="https://support.kifutown.com/hc/ja/sections/4416661785113" class="footer_link">運営会社</a>
+                </li>
+            </ul>
+            <a href="https://www.kifutown.com/" class="footer_kifutown" target="_blank">
+                <img src="images/footer-kiftownLinkImage.png" alt="">
+                <span class="footer_kifutownText">kifutown.com</span>
+            </a>
+            <small class="footer_copyright">
+                © ARIGATOBANK, Inc.
+            </small>
+            <img src="images/footer-image.jpg" alt="" class="footer_img">
+            <div class="footer_slideloop">
+                <a href="#" class="footer_pagetop">
+                    <img src="images/footer-pagetop-background.svg" alt="" class="footer_ani01">
+                    <img src="images/footer-pagetop-background.svg" alt="" class="footer_ani02">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        var about_slide_bg_img = document.querySelector('.about_slide_bg_img');
+        var howToUse_items1 = document.querySelector('.howtouse_item_image1');
+        var howToUse_items2 = document.querySelector('.howtouse_item_image2');
+        var howToUse_items3 = document.querySelector('.howtouse_item_image3');
+        var howToUse_items4 = document.querySelector('.howtouse_item_image4');
+        function getTop(e) {
+            var offset = e.offsetTop;
+            if (e.offsetParent != null) offset += getTop(e.offsetParent);
+            return offset;
+        }
+        var slide_offset = getTop(about_slide_bg_img);
+        var howToUse_offset1 = getTop(howToUse_items1);
+        var howToUse_offset2 = getTop(howToUse_items2);
+        var howToUse_offset3 = getTop(howToUse_items3);
+        var howToUse_offset4 = getTop(howToUse_items4);
+        console.log(howToUse_offset1);
+        console.log(howToUse_offset2);
+        console.log(howToUse_offset3);
+        console.log(howToUse_offset4);
+
+        window.addEventListener('scroll', slideMove);
+        function slideMove() {
+            if (window.pageYOffset > slide_offset - 400 && window.pageYOffset < slide_offset + 100) {
+                about_slide_bg_img.classList.add('anim_scale');
+            } else if (window.pageYOffset > howToUse_offset1 - 700 && window.pageYOffset < howToUse_offset1 && howToUse_offset1 === howToUse_offset2) {
+                howToUse_items1.classList.add('anim_scale');
+                howToUse_items2.classList.add('anim_scale');
+            } else if (window.pageYOffset > howToUse_offset1 - 700 && window.pageYOffset < howToUse_offset1) {
+                howToUse_items1.classList.add('anim_scale');
+            } else if (window.pageYOffset > howToUse_offset2 - 700 && window.pageYOffset < howToUse_offset2) {
+                howToUse_items2.classList.add('anim_scale');
+            } else if (window.pageYOffset > howToUse_offset3 - 700 && window.pageYOffset < howToUse_offset3 && howToUse_offset3 === howToUse_offset4) {
+                howToUse_items3.classList.add('anim_scale');
+                howToUse_items4.classList.add('anim_scale');
+            } else if (window.pageYOffset > howToUse_offset3 - 700 && window.pageYOffset < howToUse_offset3) {
+                howToUse_items3.classList.add('anim_scale');
+            } else if (window.pageYOffset > howToUse_offset4 - 700 && window.pageYOffset < howToUse_offset4) {
+                howToUse_items4.classList.add('anim_scale');
+            }
+            // console.log(pageYOffset);
+        }
+    </script>
+</body>
+
+</html>
